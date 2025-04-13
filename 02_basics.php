@@ -14,7 +14,7 @@
     }
     .container{
         max-width: 80%;
-    background-color: grey;
+    background-color: rgb(243, 247, 18);
     margin: auto;
     padding: 23px;
     }
@@ -70,11 +70,37 @@
                 }
          // iterating arrays in php using do while loop
         $a=0;
-        while($a<count($code)){
+        do{
             echo " <br> the value languages is : ";
             echo $code[$a];
             $a++;
-                }do()
+                }while($a<count($code));
+// iterating arrays in php using for loop
+            
+
+//$z = 5; // or any value you want
+
+for ($i = 0; $i <= 10; $i++) { 
+    echo "<br> The value a is ";
+    echo $i;
+}
+
+// iterating arrays using for each loop
+    foreach($code as $value){
+        echo " <br> the value of the array is ".$value;
+    }
+
+    // functions 
+    function print_num($num){
+        echo "<br> the number is".$num;
+    }
+    print_num(5);
+    print_num(9);
+    print_num(18);
+
+
+
+?>
 
         ?>
     </div>
